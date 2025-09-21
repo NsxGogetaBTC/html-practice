@@ -3,33 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>first website</title>
+    <title>html tags </title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        h2{color: crimson;}
+    </style>
 </head>
 <body>
-    <!-- this show the use of h tags -->
-    <h1>this is my first project on pure html</h1>
-    <h2>this is my first project on pure html</h2>
-    <h3>this is my first project on pure html</h3>
-    <h4>this is my first project on pure html</h4>
-    <h5>this is my first project on pure html</h5>
-    <h6>this is my first project on pure html</h6>
-    <h1>main heading</h1>
-    <!-- use of paragraph, break,horizontal,bold,italic,underline,strong,emphasise,superscript and subscrip tags -->
-    <p>wclcome to my first website <br>In this i will use all the functions as much as possible</p>
-    <p style="background-color: black;"><hr>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, laboriosam?</p>
-    <h2>text formating</h2>
-    <p><b>this is in bold</b></p>
-    <p><i>this is in italic</i></p>
-    <p><u>this is in underline</u></p>
-    <p>this is a normal text</p>
-    <p><strong>hello jhvuycvuyv <em>yoooo</em> ejhvjec wejhve</strong></p>
-    <p>x<sup>2</sup></p>
-    <p>h<sub>2</sub>o</p>
-    <!-- here i used links means anchor tag -->
-    <a target="_blank" href="https://www.google.com">click here</a><br>
-    <a target="_blank" href="./rel.html">click here</a>
+    <!-- HEADER -->
+ <header>
+    <h1 style="color: red;">HTML</h1>
+    <nav><ul><li><a href="#intro">INTRO</a></li><li><a href="#links">LINKS</a></li><li><a href="#lists">LISTS</a></li>
+    <LI><a href="#table">Sample table</a></LI></ul></nav>
+ </header>
+ <main>
+    <section id="intro">
+    <!-- inttroduction -->
+     <h2 align="center"><u>Introduction</u></h2>
+     <p>This section contains info about the basiscs of html and also contains use of some tags .<br>
+     This site shows a skeleton based on <b style="background-color: red;">pure HTML</b> while using <i>almost all the tags in HTML</i>. <u>pay attention</u> to all the tags as it helps in learning <strong>HTML basics</strong> I <em>really</em> like building this website. the chemical formulae of water is h<sub>2</sub>o and we write x to the power something like this x<sup>2</sup>.</p>
+    </section><hr>
+    <!-- use of links and anchor tags -->
+    <section id="links">
+        <a target="_blank" href="https://www.google.com" rel="noopener noreferrer">click here to visit google site</a><br>
+        <a target="_blank" href="./rel.html">click here</a>
+    </section><hr>
     <!-- use of lists -->
-     
+    <section id="lists">
+        <h2 align="center"><u>Lists</u></h2>
+        <p>unordered lists:</p>
+        <ul><li>HTML</li><LI>CSS</LI></ul>
+        <p>ordered lists:</p>
+        <ol><li>fill form</li><li>submit</li></ol>
+        <p>nesting of lists:</p>
+        <ul><li>fruits:<ul><li>apple</li><li>banana</li><ol type="A"><li>yellow banana</li><li>green banana</li></ol></ul></li></ul>
+        <p>description list:</p>
+        <dl><dt>HTML<dd>Markup language for web pages</dd></dt></dl>
+    </section><hr>
+
+        <!-- Section: Table -->
+    <section id="table">
+      <h2 align="center">Sample Data Table</h2>
+      <table border="10">
+        <caption>Form Submissions</caption>
+        <thead>
+          <tr><th>Name</th><th>Email</th><th>Country</th><th>phone</th></tr></thead>
+         <tbody><tr><td>Divyansh</td> <td>div@example.com</td> <td>India</td> <td>1234567899</td></tr></tbody>
+         <tfoot><tr><td colspan="4">End of Records</td></tr></tfoot>
+      </table>
+      <hr>
+    </section>
+
+    <!-- sample registration form -->
+     <section id="forms">
+         <h1 align="center">Details Form</h1>
+    <h4 align="center">Department of Information</h4>
+    <form action="./submit.html" method="GET">
+        <fieldset>
+            <legend>FILLED BY CANDIDATE</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="fullname" required>
+
+            <label for="email">EMAIL</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="dob">DOB</label>
+            <input type="date" name="dob" id="dob">
+            <br>
+            <br>
+            <label for="gender">GENDER</label>
+            <select name="gender" id="gender">
+                <option value="">--Select Gender--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">other</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>CONTACT INFORMATION</legend>
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phonenumber" placeholder="e.g., 9876543210" required>
+            <br>
+            <br>
+            <label for="address">FULL ADDRESS</label>
+            <br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea>
+            <br>
+            <br>
+            <label for="country">COUNTRY</label>
+            <input type="text" id="country" name="country" required>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>EDUCATIONAL BACKGROUND</legend>
+            <label for="highest-qualification">HIGHEST QUALIFICATION</label>
+            <input type="text" id="highest-qualification" name="highest-qualification" required>
+            <br>
+            <br>
+            <label for="institution">INSTITUTION NAME</label>
+            <input type="text" id="institution" name="institution" required>
+            <br>
+            <br>
+            <label for="year-of-passing">YEAR OF PASSING</label>
+            <input type="text" id="year-of-passing" name="year-of-passing" required>
+            <br>
+            <br>
+            <label>STREAM</label>
+            <br>
+            <input type="radio" id="CSE" name="stream" value="CSE">
+            <label for="CSE">CSE</label><br>
+            <input type="radio" id="AI" name="stream" value="AI">
+            <label for="AI">AI</label><br>
+            <input type="radio" id="ECE" name="stream" value="ECE">
+            <label for="ECE">ECE</label><br>
+            <input type="radio" id="MECH" name="stream" value="MECH">
+            <label for="MECH">MECH</label><br>
+            <input type="radio" id="CIVIL" name="stream" value="CIVIL">
+            <label for="CIVIL">CIVIL</label><br>
+            <input type="radio" id="OTHER" name="stream" value="OTHER">
+            <label for="OTHER">OTHER</label><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>OTHER INFORMATION</legend>
+            <label>HOBBIES (SELECT ALL THAT APPLY)</label><br>
+            <input type="checkbox" name="hobbies" id="reading" value="reading">
+            <label for="reading">Reading</label><br>
+            <input type="checkbox" name="hobbies" id="traveling" value="traveling">
+            <label for="traveling">Traveling</label><br>
+            <input type="checkbox" name="hobbies" id="sports" value="sports">
+            <label for="sports">Sports</label><br>
+            <input type="checkbox" name="hobbies" id="music" value="music">
+            <label for="music">Music</label><br>
+            <br>
+            <br>
+            <label for="photo">UPLOAD PHOTO</label>
+            <input type="file" id="photo" name="photo">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>AGREEMENT</legend>
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <label for="agreement">I agree to the terms and conditions</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>SUBMISSION</legend>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+        
+    </form>
+     </section>
+
+     <!-- media section -->
+      <section id="media">
+        <H2 align="center">Media</H2>
+        <figure> <img src="WhatsApp Image 2025-09-14 at 01.13.01_4cc1f7b3.jpg" alt="a leetcode image" width="200"> <figcaption>leetcode icon</figcaption></figure>
+        <video controls width="250">
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+        <h3>Canvas</h3>
+      <canvas id="myCanvas" width="200" height="100"></canvas>
+      <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = "white";
+        ctx.fillRect(20, 20, 150, 50);
+      </script>
+
+      <h3>SVG </h3>
+      <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" fill="red" />
+      </svg>
+      <hr>
+      </section>
+ </main>
+   <!-- Aside -->
+  <aside>
+    <h3>Note</h3>
+    <p>This is a demo skeleton that uses most HTML tags.</p>
+  </aside>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 HTML. All rights reserved.</p>
+  </footer>
+ <!-- <script src="script.js"></script> -->
 </body>
-</html>
+</html> 
